@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- Font awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Imports Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	<!-- Import CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Mang Gym</title>
+</head>
+<body>
+
+	<!-- Navbar and Logo -->
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href=""><img src="img/mainlogo.svg" alt="Mang Gym">
+					</a>
+				</div>
+				<div id="navbar3" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="programs.html">Programs</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+		</nav>
+	</div>
+
+	<!-- Header Showcase -->
+	<header id="showcase" class="grid">
+		<div class="bg-image"></div>
+		<div class="content-wrap">
+			<h1>WELCOME TO <span style="color: yellow">MANG GYM</span></h1>
+			<p>A Haven for Bodybuilders</p>
+			<a href="#" class="btn">Join Now!</a>
+		</div>
+	</header>
+
+	<!-- Main Area -->
+	<main class="container">
+		<section id="map">
+			<h2>FULL CONTACT DETAILS</h2>
+			<p>Make every movement count. With just the right amount of training and motivation, we can help you reach your fitness goals. Fully furnished gyms and specially crafted exercise routines such as our Dynamic Movement Training will provide a constant challenge to better yourself.</p>
+
+			<!-- Google Map Location -->
+			<div class="col-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.1155311035877!2d121.07027431537551!3d14.706057989735346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b09be19be8a5%3A0xe893f97c4f028b24!2sMang+Gym!5e0!3m2!1sen!2sph!4v1513213898091"  frameborder="0" style="border:0" allowfullscreen></iframe>
+				<h4>OUR LOCATION</h4>
+				<p>Pen, a Tuitt Bootcamp Trainee with rights to famous programming languages, became the first owner of this gym. He had a perfect location in Fairview near Novaliches. The original space was only one thousand square meters so a lot of negotiating ensued to get another eight hundred square meters of space. For the next clubs, a new partnership was forged between Vince, Pat, Sean, Dennis, Jen, Mark, Sid and all of his classmates, and the Tuitt family. We started with Fairview and Manila branches. From the start until 2005, we were under a Galactic company which got the developmental rights for the brand for several countries including the Philippines.</p>
+			</div>
+
+			<!-- Contact Form -->
+			<div class="col-map">
+				<div class="contact-form">
+					<h3>Inquiry Form</h3>
+					<form action="/action_page.php">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+						<label for="city">City</label>
+						<select id="city" name="city">
+							<option value="fairview">Fairview</option>
+							<option value="manila">Manila</option>
+							<option value="baguio">Baguio</option>
+							<option value="davao">Davao</option>
+						</select>
+
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+		<!-- Footer -->
+		<footer id="contact">
+			<small class="small-1">&copy; Copyright 2017 | Stephene Canciller | <span style="color: yellow">Mang Gym</span> </small>
+			<div id="disclaimer">
+				<div class="disclaimer-last">
+					<small class="small-2">Disclaimer: No copyright infringement is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner.</small>
+				</div>
+			</div>
+
+			<div id="socialMedia">
+				<div class="contact">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</div>
+				<div class="contact">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</div>
+				<div class="contact">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</div>
+				<div class="contact">
+					<i class="fa fa-youtube" aria-hidden="true"></i>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Import Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- Font Awesome CDN -->
+	<script src="https://use.fontawesome.com/5743362e56.js"></script>
+
+	<!-- Import Bootstrap Javascript -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

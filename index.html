@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- Font awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<!-- Imports Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	<!-- Import CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>Mang Gym</title>
+</head>
+<body>
+
+	<!-- Navbar and Logo -->
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href=""><img src="img/mainlogo.svg" alt="Mang Gym">
+					</a>
+				</div>
+				<div id="navbar3" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="programs.html">Programs</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+		</nav>
+	</div>
+
+	<!-- Header Showcase -->
+	<header id="showcase" class="grid">
+		<div class="bg-image"></div>
+		<div class="content-wrap">
+			<h1>WELCOME TO <span style="color: yellow">MANG GYM</span></h1>
+			<p>A HAVEN FOR BODYBUILDERS</p>
+			<a href="#" class="btn">Join Now!</a>
+		</div>
+	</header>
+
+	<!-- Main Area -->
+	<main class="container">
+		<section id="trial">
+			<div class="freetrial">
+				<h1>FREE TRIAL</h1>
+				<p>Enjoy a 365 days FREE ACCESS to all our classes and facilities</p>
+				<select id="location" name="Location">
+					<option value="" disabled selected>Select your location</option>
+					<option value="fairview">Fairview</option>
+					<option value="manila">Manila</option>
+					<option value="baguio">Baguio</option>
+					<option value="davao">Davao</option>
+				</select>
+			</div>
+		</section>
+
+		<!-- History -->
+		<section id="banner">
+			<div class="hero">
+				<h1>History of Gym</h1>
+				<img src="img/oldgym.jpeg" style="width:100%;" border="0" alt="Null">
+				<p>A gym, also referred as gymnasium, is an open air or covered location for gymnastics, athletics, and gymnastic services. The word is derived from the ancient Greek gymnasium. They are commonly found in athletic and fitness centers, and as activity and learning spaces in educational institutions. "Gym" is also slang for "fitness center", which is often an indoor facility.
+
+				Gymnasia apparatus such as barbells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises. In safe weather, outdoor locations are the most conducive to health. Gyms were popular in ancient Greece. Their curricula included Gymnastica militaria or self-defense, gymnastica medica, or physical therapy to help the sick and injured, and gymnastica athletica for physical fitness and sports, from boxing to dancing.</p>
+			</div>
+		</section>
+
+		<!-- Member's Gallery -->
+		<section id="gallery">
+			<h2>MEMBER'S GALLERY</h2>
+			<br>
+			<h2>DYNAMIC BODYBUILDING TRAININGS (DBT)</h2>
+			<div class="column">
+				<img src="img/program1.jpg">
+				<p>DMT uses the body’s natural movement patterns through three-dimensional exercises.</p>
+			</div>
+			<div class="column">
+				<img src="img/program2.jpg">
+				<p>Movements can just use your body weight or be loaded for greater benefit.</p>
+			</div>
+			<div class="column">
+				<img src="img/program3.jpg">
+				<p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
+			</div>
+			<div class="column">
+				<img src="img/program4.jpg">
+				<p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
+			</div>
+		</section>
+
+		<section id="newsletter">
+			<h2>Sign up for our EXCLUSIVE TRAINING Tips, Offers and Discounts</h2>
+			<p>We promise to only send you the good stuff! No Spam.</p>
+			<div class="newsform">
+				<form action="/action_page.php">
+					<input type="text" placeholder="Email address" name="mail" required>
+					<input type="submit" value="Subscribe">
+				</form>
+			</div>
+		</section>
+	</main>
+
+		<!-- Footer -->
+		<footer id="contact">
+			<small class="small-1">&copy; Copyright 2017 | Stephene Canciller | <span style="color: yellow">Mang Gym</span> </small>
+			<div id="disclaimer">
+				<div class="disclaimer-last">
+					<small class="small-2">Disclaimer: No copyright infringement is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner.</small>
+				</div>
+			</div>
+
+			<div id="socialMedia">
+				<div class="contact">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</div>
+				<div class="contact">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</div>
+				<div class="contact">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</div>
+				<div class="contact">
+					<i class="fa fa-youtube" aria-hidden="true"></i>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Import Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- Font Awesome CDN -->
+	<script src="https://use.fontawesome.com/5743362e56.js"></script>
+
+	<!-- Import Bootstrap Javascript -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
