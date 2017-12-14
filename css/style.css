@@ -574,6 +574,10 @@ footer {
 	#about > p {
 		font-size: 1.2em;
 	}
+
+	img.about2 {
+		height: 240px;
+	}
 	
 	/* Programs / Trainings / Membership */
 	#services > div.column,
