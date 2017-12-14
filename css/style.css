@@ -510,24 +510,26 @@ footer {
 
 	.wrapper h2 {
 	color: white;
-	font-size: 25px;
+	font-size: 15px;
 	font-weight: normal;
 }
 
 .wrapper p {
 	margin-top: -25px;
+	font-size: 10px;
 	color: #fff;
 	text-shadow: 1px 1px 1px #000;
 }
 
 .wrapper footer {
 	margin-top: -65px;
+	font-size: 9px;
 	text-shadow: 1px 1px 1px #000;
 	color: indianred;
 	background: rgba(255, 255, 255, 0);
 
 }
-	
+
 	.container {
 		width: 100%;
 	}
@@ -642,11 +644,11 @@ footer {
 	.btn1 {
     display: block;
     background: #333;
-    width: 80%;
+    width: 70%;
     position: relative;
     color: #fff;
     text-decoration: none;
-    padding: .5em .5em;
+    padding: .3em .3em;
     border: 1px solid #666;
     margin: 0 auto;
 	}
