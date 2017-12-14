@@ -118,13 +118,6 @@ ul > li {
     -webkit-margin-end: 0px;
 }
 
-.wrapper h1 {
-	color: white;
-	font-size: 40px;
-	font-weight: solid;
-	margin-bottom: 0;
-}
-
 .wrapper h2 {
 	color: white;
 	font-size: 25px;
@@ -515,6 +508,26 @@ footer {
 /* Mobile devices */
 @media only screen and (max-width: 480px) {
 
+	.wrapper h2 {
+	color: white;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.wrapper p {
+	margin-top: -25px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.wrapper footer {
+	margin-top: -65px;
+	text-shadow: 1px 1px 1px #000;
+	color: indianred;
+	background: rgba(255, 255, 255, 0);
+
+}
+	
 	.container {
 		width: 100%;
 	}
