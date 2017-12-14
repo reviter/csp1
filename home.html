@@ -54,45 +54,64 @@
 		</div>
 	</header>
 
-	<!-- Main Area / Map / Contact Details -->
+	<!-- Main Area / Home -->
 	<main class="container">
-		<section id="map">
-			<h2>FULL CONTACT DETAILS</h2>
-			<p>Make every movement count. With just the right amount of training and motivation, we can help you reach your fitness goals. Fully furnished gyms and specially crafted exercise routines such as our Dynamic Movement Training will provide a constant challenge to better yourself.</p>
-
-			<!-- Google Map Location -->
-			<div class="col-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.1155311035877!2d121.07027431537551!3d14.706057989735346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b09be19be8a5%3A0xe893f97c4f028b24!2sMang+Gym!5e0!3m2!1sen!2sph!4v1513213898091"  frameborder="0" style="border:0" allowfullscreen></iframe>
-				<h4>OUR LOCATION</h4>
-				<p>Pen, a Tuitt Bootcamp Trainee with rights to famous programming languages, became the first owner of this gym. He had a perfect location in Fairview near Novaliches. The original space was only one thousand square meters so a lot of negotiating ensued to get another eight hundred square meters of space. For the next clubs, a new partnership was forged between Vince, Pat, Sean, Dennis, Jen, Mark, Sid and all of his classmates, and the Tuitt family. We started with Fairview and Manila branches. From the start until 2005, we were under a Galactic company which got the developmental rights for the brand for several countries including the Philippines.</p>
+		<section id="trial">
+			<div class="freetrial">
+				<h1>FREE TRIAL</h1>
+				<p>Enjoy a 365 days FREE ACCESS to all of our classes and facilities</p>
+				<select id="location" name="Location">
+					<option value="" disabled selected>Select your location</option>
+					<option value="fairview">Fairview</option>
+					<option value="manila">Manila</option>
+					<option value="baguio">Baguio</option>
+					<option value="davao">Davao</option>
+				</select>
 			</div>
+		</section>
 
-			<!-- Contact Form -->
-			<div class="col-map">
-				<div class="contact-form">
-					<h3>Inquiry Form</h3>
-					<form action="/action_page.php">
-						<label for="fname">First Name</label>
-						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		<!-- History -->
+		<section id="banner">
+			<div class="hero">
+				<h1>History of Gym</h1>
+				<img src="img/oldgym.jpeg" style="width:100%;" border="0" alt="Null">
+				<p>A gym, also referred as gymnasium, is an open air or covered location for gymnastics, athletics, and gymnastic services. The word is derived from the ancient Greek gymnasium. They are commonly found in athletic and fitness centers, and as activity and learning spaces in educational institutions. "Gym" is also slang for "fitness center", which is often an indoor facility.
 
-						<label for="lname">Last Name</label>
-						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				Gymnasia apparatus such as barbells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises. In safe weather, outdoor locations are the most conducive to health. Gyms were popular in ancient Greece. Their curricula included Gymnastica militaria or self-defense, gymnastica medica, or physical therapy to help the sick and injured, and gymnastica athletica for physical fitness and sports, from boxing to dancing.</p>
+			</div>
+		</section>
 
-						<!-- City Location -->
-						<label for="city">City</label>
-						<select id="city" name="city">
-							<option value="fairview">Fairview</option>
-							<option value="manila">Manila</option>
-							<option value="baguio">Baguio</option>
-							<option value="davao">Davao</option>
-						</select>
+		<!-- Member's Gallery -->
+		<section id="gallery">
+			<h2>MEMBER'S GALLERY</h2>
+			<br>
+			<h2>DYNAMIC BODYBUILDING TRAININGS (DBT)</h2>
+			<div class="column">
+				<img src="img/program1.jpg">
+				<p>DMT uses the body’s natural movement patterns through three-dimensional exercises.</p>
+			</div>
+			<div class="column">
+				<img src="img/program2.jpg">
+				<p>Movements can just use your body weight or be loaded for greater benefit.</p>
+			</div>
+			<div class="column">
+				<img src="img/program3.jpg">
+				<p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
+			</div>
+			<div class="column">
+				<img src="img/program4.jpg">
+				<p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
+			</div>
+		</section>
 
-						<label for="subject">Subject</label>
-						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-						<input type="submit" value="Submit">
-					</form>
-				</div>
+		<section id="newsletter">
+			<h2>Sign up for our EXCLUSIVE TRAINING Tips, Offers and Discounts</h2>
+			<p>We promise to only send you the good stuff! No Spam.</p>
+			<div class="newsform">
+				<form action="/action_page.php">
+					<input type="text" placeholder="Email address" name="mail" required>
+					<input type="submit" value="Subscribe">
+				</form>
 			</div>
 		</section>
 	</main>
@@ -106,7 +125,6 @@
 				</div>
 			</div>
 
-			<!-- Social Media -->
 			<div id="socialMedia">
 				<div class="contact">
 					<i class="fa fa-facebook" aria-hidden="true"></i>

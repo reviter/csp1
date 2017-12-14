@@ -7,7 +7,6 @@
 	font-size: 1em;
 	line-height: 1.5;
 	text-align: center;
-	.mySlides {display:none}
 }
 
 /* Navbar and Logo */
@@ -29,10 +28,18 @@
   	margin: 25px 15px 25px 0;
 }
 
+.navbar-inverse {
+	background-color: #fff;
+}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #000;
     min-height: 100px;
     text-align: center;
+}
+
+.container-fluid {
+	background-color: #fff;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -45,6 +52,11 @@
 	background-color: 	#333;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #000;
+    z-index:3;
+}
+
 .navbar-brand {
   	padding: 0px;
 }
@@ -53,10 +65,22 @@
   	width: auto;
 }
 
-.navbar-inverse .navbar-toggle .icon-bar {
-	background-color: #000;
-    z-index:3;
+.mainlogosvg {
+	transform: scale(0.1, 0.1);
+	position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
 }
+
+
+.navbar-right li {
+	background-color: #fff;
+	color: #000;
+	text-shadow: 1px 1px 1px #000;
+}
+
 
 ul {
 	padding-left: 0;
@@ -69,35 +93,17 @@ ul > li {
     text-align: center;
 }
 
-.navbar-right li {
-	background-color: #fff;
-	color: #000;
-	text-shadow: 1px 1px 1px #000;
-}
-
-.mainlogosvg {
-	transform: scale(0.1, 0.1);
-	position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin:0 auto;
-}
-
-.navbar-inverse {
-	background-color: #fff;
-}
-
-.container-fluid {
-	background-color: #fff;
-}
-
-.list-group-item {
-	background-color: #d4d3d3;
-	border: 1px solid #a29d9d;
-}
-
 /* Landing Page Settings */
+.vidWrapper #landingVid {
+	display: inline-block;
+	position: fixed;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -100;
+	top: 0;
+	left: 0;
+}
+
 .wrapper {
 	width: 80%;
 	/*margin: 0 auto;*/
@@ -108,14 +114,6 @@ ul > li {
 	transform: translate(-50%, -50%);
 	padding: 25px;
 	border-radius: 2%;
-}
-
-.quote {
-	display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
 }
 
 .wrapper h2 {
@@ -130,6 +128,14 @@ ul > li {
 	text-shadow: 1px 1px 1px #000;
 }
 
+.quote {
+	display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 .wrapper footer {
 	margin-top: -65px;
 	text-shadow: 1px 1px 1px #000;
@@ -138,15 +144,6 @@ ul > li {
 
 }
 
-.vidWrapper #landingVid {
-	display: inline-block;
-	position: fixed;
-	min-height: 100%;
-	min-width: 100%;
-	z-index: -100;
-	top: 0;
-	left: 0;
-}
 
 /* h123 and P Global Settings */
 h1 {
@@ -171,7 +168,25 @@ p {
   padding: 2em 2em;
 }
 
-/* Button Settings */
+/* Button Settings for Landing Page */
+.btn1 {
+  display: block;
+  background: #333;
+  width: 45%;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0 auto;
+}
+
+.btn1:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/* Button Global Settings */
 .btn {
   display: block;
   background: #333;
@@ -189,22 +204,6 @@ p {
   color: #333;
 }
 
-.btn1 {
-  display: block;
-  background: #333;
-  width: 45%;
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  padding: 1em 2em;
-  border: 1px solid #666;
-  margin: 0 auto;
-}
-
-.btn1:hover {
-  background: #eaeaea;
-  color: #333;
-}
 
 
 
@@ -225,6 +224,11 @@ p {
   height: 550px;
   z-index: -1;
   opacity: 0.8;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
 }
 
 #showcase {
@@ -249,12 +253,10 @@ p {
 	color: #fff;
 }
 
-#showcase .content-wrap,
-#section-a .content-wrap {
-  padding: 0 1.5em;
-}
 
-/* Main Area */
+/* Main Area  */
+
+/* Free Trial */
 #trial {
 	padding: 0 15px;
 	height: 250px;
@@ -277,11 +279,19 @@ p {
 }
 
 
-/* History Settings / Index */
+/* History Settings / Home */
 #banner {
-	background-color: rgba(28, 28, 28, 0.4);
+	background-color: rgba(255, 255, 255, 0.4);
 	height: 700px;
 	position: relative;
+}
+
+#banner h1 {
+	color: #000;
+}
+
+#banner p {
+	color: #000;
 }
 
 .hero {
@@ -294,25 +304,13 @@ p {
     transform: translate(-50%, -50%);
 }
 
-#banner h1 {
-	color: #fff;
-}
 
-#banner p {
-	color: #fff;
-}
-
-#about {
-	background: indianred;
-	/*height: 700px;*/
-}
 
 /* Gallery and Newsletter Settings */
 #gallery {
 	background: #333;
 	border: 10px solid indianred;	
 	color: #fff;
-	/*height: 400px;*/
 }
 
 #gallery h2 {
@@ -335,7 +333,7 @@ p {
 	font-size: 1.2em;
 }
 
-/* Images Settings / All */
+/* Images Global Settings */
 img {
 	filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
@@ -349,6 +347,10 @@ img:hover {
 }
 
 /* About Us Settings */
+#about {
+	background: indianred;
+}
+
 #about h2 {
 	color: #fff;
 	margin: 0 20px;
@@ -361,13 +363,13 @@ img:hover {
 /* Trainings / Programs Settings */
 #services {
 	background: #fff;
-	/*height: 300px;*/
 	color: #fff;
 }
 
 #services h2 {
-	color: #7a7a7a;
+	color: indianred;
 	font-size: 2.5em;
+	text-shadow: none;
 }
 
 #services h4 {
@@ -388,11 +390,14 @@ img:hover {
 
 /* Membership Settings */
 #projects {
-	background: crimson;
-	/*height: 300px;*/
+	background: indianred;
 }
 
-/* Input Settings */
+#projects h2 {
+	color: #fff;
+}
+
+/* Input Global Settings */
 input[type=text], input[type=submit] {
     width: 100%;
     padding: 12px;
@@ -508,32 +513,37 @@ footer {
 /* Mobile devices */
 @media only screen and (max-width: 480px) {
 
+	/* Landing Page */
 	.wrapper h2 {
-	color: white;
-	font-size: 15px;
-	font-weight: normal;
-}
+		color: white;
+		font-size: 15px;
+		font-weight: normal;
+	}
 
-.wrapper p {
-	margin-top: -25px;
-	font-size: 10px;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
-}
+	.wrapper p {
+		margin-top: -25px;
+		font-size: 10px;
+		color: #fff;
+		text-shadow: 1px 1px 1px #000;
+	}
 
-.wrapper footer {
-	margin-top: -65px;
-	font-size: 9px;
-	text-shadow: 1px 1px 1px #000;
-	color: indianred;
-	background: rgba(255, 255, 255, 0);
+	.wrapper footer {
+		margin-top: -65px;
+		font-size: 9px;
+		text-shadow: 1px 1px 1px #000;
+		color: indianred;
+		background: rgba(255, 255, 255, 0);
+	}
 
-}
-
+	/* Main */
 	.container {
 		width: 100%;
 	}
 
+	/* Home / History */
+	#location {
+		width: 100%;
+	}
 
 	#banner {
 		height: auto;
@@ -552,10 +562,7 @@ footer {
 		font-size: 1.2em;
 	}
 
-	#location {
-		width: 100%;
-	}
-
+	/* About Us */
 	#about .about1 {
 		width: 100%;
 	}
@@ -568,6 +575,7 @@ footer {
 		font-size: 1.2em;
 	}
 	
+	/* Programs / Trainings / Membership */
 	#services > div.column,
 	#gallery > div.column {
 		border: none;
@@ -589,6 +597,7 @@ footer {
 		margin-top: -40px;
 	}
 
+	/* Contact / Google Map Location / Form */
 	#map {
 		width: 	100%;
 	}
@@ -609,6 +618,31 @@ footer {
 		height: 200px;
 	}
 	
+	/* Footer */
+	footer {
+		text-align: center;
+	}
+
+	.small-1 {
+		display: block;
+		margin-bottom: 15px;
+		margin-top: 25px;
+		font-size: 1.1em;
+	}
+
+	div#disclaimer .small-2 {
+		display: inline-block;
+		margin-top: 50px;
+		width: 100%;
+		text-align: center;	
+	}
+
+	.small-2 {
+		margin-bottom: 15px;
+		font-size: .5em;
+	}
+
+	/* Social Media Icons */
 	div.contact {
 		width: 50px;
 		height: 50px;
@@ -617,50 +651,32 @@ footer {
 		color: #000;
 	}
 
-	footer {
-		text-align: center;
-	}
-
-	.small-1 {
-		margin-bottom: 15px;
-		display: block;
-		font-size: 1.1em;
-		margin-top: 25px;
-	}
-
-	div#disclaimer .small-2 {
-		margin-top: 50px;
-		display: inline-block;
-		width: 100%;
-		text-align: center;	
-	}
-
-	.small-2 {
-		margin-bottom: 15px;
-		display: block;
-		font-size: .5em;
-	}
-
+	/* Button Setting for Landing Page */
 	.btn1 {
     display: block;
+    margin: 0 auto;
+    padding: .3em .3em;
     background: #333;
-    width: 70%;
     position: relative;
+    width: 70%;
     color: #fff;
     text-decoration: none;
-    padding: .3em .3em;
     border: 1px solid #666;
-    margin: 0 auto;
 	}
 }
 
 /* Tablet devices */
 @media only screen and (min-width: 481px) and (max-width: 960px) {
 
+	/* Main */
 	.container {
 		width: 100%;
 	}
 
+	/* Home / History */
+	#location {
+		width: 50%;
+	}
 
 	#banner {
 		height: auto;
@@ -678,31 +694,21 @@ footer {
 		transform: none;
 		margin: 0 auto;
 	}
-
-	.col-map {
-		width: 60%;
-		margin: 0 auto;
-		position: relative;
+	
+	/* Gallery */
+	#gallery div.column{
+		width: 70%;
+		display: inline-block;
+		padding: 15px;
+		border: none;
 	}
 
-	.col-map iframe {
-		width: 	100%;
-		height: 256px;
-	}
-
-	.col-map img {
-		width: 	100%;
-		height: 256px;
-	}
-
-	#location {
-		width: 50%;
-	}
-
+	/* About Us */
 	#about > p {
 		font-size: 1.5em;
 	}
 
+	/* Programs / Trainings / Membership */
 	#services > div.column {
 		width: 30%;
 		display: inline-block;
@@ -714,6 +720,10 @@ footer {
 	#gallery img {
 		width: 100%;
 		margin-bottom: 20px;
+	}
+
+	.column h4 {
+		font-size: 1.8em;
 	}
 
 	#projects {
@@ -731,17 +741,24 @@ footer {
 		font-size: 1.5em;
 	}
 
-	h4 {
-		font-size: 1.8em;
+	/* Google Map Location / Contact Form */
+	.col-map {
+		width: 60%;
+		margin: 0 auto;
+		position: relative;
 	}
 
-	#gallery div.column{
-		width: 70%;
-		display: inline-block;
-		padding: 15px;
-		border: none;
+	.col-map iframe {
+		width: 	100%;
+		height: 256px;
 	}
 
+	.col-map img {
+		width: 	100%;
+		height: 256px;
+	}
+
+	/* Footer */
 	.small-1 {
 		display: inline-block;
 		width: 29%;
@@ -753,6 +770,7 @@ footer {
 		text-align: center;	
 	}
 
+	/* Social Media Icons */
 	div#socialMedia {
 		display: inline-block;
 		width: 32%;
@@ -760,7 +778,6 @@ footer {
 	}
 
 	footer div.contact {
-		/*border: 1px solid red;*/
 		width: 50px;
 		height: 50px;
 		color: #000;
@@ -768,6 +785,8 @@ footer {
 		display: inline-block;
 		text-align: right;
 	}
+
+	/* Button Setting for Landing Page */
 
 	.btn1 {
 		display: block;
@@ -786,8 +805,14 @@ footer {
 /* Desktop devices */
 @media only screen and (min-width: 961px) {
 
+	/* Main */
 	.container {
 		width: 100%;
+	}
+
+	/* Home / History */
+	#location {
+		width: 50%;
 	}
 
 	#banner {
@@ -803,23 +828,21 @@ footer {
 		margin: 0 auto;
 	}
 
-	#location {
-		width: 50%;
+	.hero p {
+		font-size: 1.5em;
+	}
+	
+	/* Gallery / Newsletter */
+	#gallery div.column {
+		width: 23%;
+		display: inline-block;
+		padding: 15px;
+		border: none;
 	}
 
-	.col-map {
-		width: 80%;
-		margin: 0 auto;
-		position: relative;
-	}
-
-	.col-map img {
-		width: 	100%;
-	}
-
-	.col-map iframe {
-		width: 	100%;
-		height: 474px;
+	#gallery img {
+		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	.newsform {
@@ -828,10 +851,7 @@ footer {
 		height: 200px;
 	}
 
-	.hero p {
-		font-size: 1.5em;
-	}
-
+	/* Programs / Trainings / Membership */
 	#services div.column {
 		width: 32%;
 		display: inline-block;
@@ -851,21 +871,26 @@ footer {
 
 	#projects img {
 		width: 80%;
-		margin-top: -150px;
+		margin-top: -175px;
+	}
+	
+	/* Google Map Location / Contact Form */
+	.col-map {
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
 	}
 
-	#gallery div.column {
-		width: 23%;
-		display: inline-block;
-		padding: 15px;
-		border: none;
+	.col-map img {
+		width: 	100%;
 	}
 
-	#gallery img {
-		width: 100%;
-		margin-bottom: 20px;
+	.col-map iframe {
+		width: 	100%;
+		height: 474px;
 	}
 
+	/* Footer */
 	.small-1 {
 		display: inline-block;
 		width: 51%;
@@ -877,9 +902,10 @@ footer {
 		text-align: center;	
 	}
 
+	/* Social Media Icons */
 	div#socialMedia {
 		display: inline-block;
-		width: 19%;
+		width: 20%;
 		text-align: left;
 	}
 
