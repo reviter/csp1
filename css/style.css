@@ -58,6 +58,17 @@
     z-index:3;
 }
 
+ul {
+	padding-left: 0;
+}
+
+ul > li {
+	list-style-type: none;
+    line-height: 3em;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
 .navbar-right li {
 	background-color: #fff;
 	color: #000;
@@ -86,15 +97,9 @@
 	border: 1px solid #a29d9d;
 }
 
-/*.row {
-	background-color: #37424A;
-    padding: 0.5em;
-    margin: 0 0;
-    color: #fff;
-}*/
-
+/* Landing Page Settings */
 .wrapper {
-	width: 50%;
+	width: 80%;
 	/*margin: 0 auto;*/
 	text-align: center;
 	position: absolute;
@@ -150,6 +155,16 @@
 	left: 0;
 }
 
+/* h123 and P Global Settings */
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2em;
+	color: #000;
+}
+
 h1,
 h2,
 h3 {
@@ -163,6 +178,7 @@ p {
   padding: 2em 2em;
 }
 
+/* Button Settings */
 .btn {
   display: block;
   background: #333;
@@ -200,7 +216,6 @@ p {
 
 
 /* Header Showcase */
-
 #showcase {
   min-height: 550px;
   text-align: center;
@@ -268,10 +283,22 @@ p {
 	font-size: 1.4em;
 }
 
+
+/* History Settings / Index */
 #banner {
 	background-color: rgba(28, 28, 28, 0.4);
 	height: 700px;
 	position: relative;
+}
+
+.hero {
+	width: 40%;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #banner h1 {
@@ -287,59 +314,7 @@ p {
 	/*height: 700px;*/
 }
 
-img {
-	filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .1s ease-in-out;
-}
-
-img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01);
-}
-
-#about h2 {
-	color: #fff;
-	margin: 0 20px;
-}
-
-#about p {
-	color: #fff;
-}
-
-#services {
-	background: #fff;
-	/*height: 300px;*/
-	color: #fff;
-}
-
-#services h2 {
-	color: #7a7a7a;
-	font-size: 2.5em;
-}
-
-#services h4 {
-	color: indianred;
-	font-size: 1.8em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-#services p {
-	color: #7a7a7a;
-}
-
-#services > div.column,
-#gallery > div.column {
-	border: 1px solid #fff;
-}
-
-#projects {
-	background: crimson;
-	/*height: 300px;*/
-}
-
+/* Gallery and Newsletter Settings */
 #gallery {
 	background: #333;
 	border: 10px solid indianred;	
@@ -367,6 +342,64 @@ img:hover {
 	font-size: 1.2em;
 }
 
+/* Images Settings / All */
+img {
+	filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .1s ease-in-out;
+}
+
+img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+/* About Us Settings */
+#about h2 {
+	color: #fff;
+	margin: 0 20px;
+}
+
+#about p {
+	color: #fff;
+}
+
+/* Trainings / Programs Settings */
+#services {
+	background: #fff;
+	/*height: 300px;*/
+	color: #fff;
+}
+
+#services h2 {
+	color: #7a7a7a;
+	font-size: 2.5em;
+}
+
+#services h4 {
+	color: indianred;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#services p {
+	color: #7a7a7a;
+}
+
+#services > div.column,
+#gallery > div.column {
+	border: 1px solid #fff;
+}
+
+/* Membership Settings */
+#projects {
+	background: crimson;
+	/*height: 300px;*/
+}
+
+/* Input Settings */
 input[type=text], input[type=submit] {
     width: 100%;
     padding: 12px;
@@ -390,38 +423,32 @@ input[type=submit]:hover {
     opacity: 0.8;
 }
 
-footer {
-	background: #000;
-	color: #fff;
-	padding: 5px;
-	height: 100px;
-	line-height: 100px;
-}
-.logo {
-	width: 100%;
-	height: 140px;
-	background: darkgrey;
-	margin:  auto;
-}
-ul {
-	padding-left: 0;
-}
-ul > li {
-	list-style-type: none;
-    line-height: 3em;
-    border-bottom: 1px solid #fff;
-    text-align: center;
-}
-.hero {
-	width: 40%;
-    padding: 40px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Map and Contact Details */
 #map > h2 {
 	font-size: 2em;
 	color: indianred;
@@ -453,13 +480,25 @@ ul > li {
     clear: both;
 }
 
-h1 {
-	font-size: 2em;
+/* Contact Info Form */
+div.contact-form {
+    border-radius: 5px;
+    background-color: indianred;
+    padding: 20px;
 }
 
-h2 {
-	font-size: 2em;
-	color: #000;
+div.contact-form h3 {
+	color: #fff;
+}
+
+
+/* Footer Settings */
+footer {
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	height: 100px;
+	line-height: 100px;
 }
 
 .small-1 {
@@ -470,44 +509,6 @@ h2 {
 .small-2 {
 	color: #000;
 	font-size: 0.65em;
-}
-
-.move {
-	width: -200px;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-div.contact-form {
-    border-radius: 5px;
-    background-color: indianred;
-    padding: 20px;
-}
-
-div.contact-form h3 {
-	color: #fff;
 }
 
 
@@ -524,7 +525,7 @@ div.contact-form h3 {
 	}
 
 	.hero {
-		width: 95%;
+		width: 100%;
 		position: static;
 		top: 0;
 		left: 0;
@@ -557,6 +558,13 @@ div.contact-form h3 {
 		border: none;
 	}
 
+	#services img,
+	#gallery img,
+	#map iframe {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
 	#projects {
 		width: 100%;
 	}
@@ -584,13 +592,6 @@ div.contact-form h3 {
 	.col-map img {
 		width: 	100%;
 		height: 200px;
-	}
-
-	#services img,
-	#gallery img,
-	#map iframe {
-		width: 100%;
-		margin-bottom: 15px;
 	}
 	
 	div.contact {
@@ -624,6 +625,18 @@ div.contact-form h3 {
 		display: block;
 		font-size: .5em;
 	}
+
+	.btn1 {
+    display: block;
+    background: #333;
+    width: 80%;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: .5em .5em;
+    border: 1px solid #666;
+    margin: 0 auto;
+	}
 }
 
 /* Tablet devices */
@@ -636,6 +649,10 @@ div.contact-form h3 {
 
 	#banner {
 		height: auto;
+	}
+
+	.hero p {
+		font-size: 1.5em;
 	}
 
 	.hero {
@@ -661,10 +678,6 @@ div.contact-form h3 {
 	.col-map img {
 		width: 	100%;
 		height: 256px;
-	}
-
-	.hero p {
-		font-size: 1.5em;
 	}
 
 	#location {
@@ -708,7 +721,7 @@ div.contact-form h3 {
 	}
 
 	#gallery div.column{
-		width: 50%;
+		width: 70%;
 		display: inline-block;
 		padding: 15px;
 		border: none;
@@ -739,6 +752,18 @@ div.contact-form h3 {
 		font-size: 2em;
 		display: inline-block;
 		text-align: right;
+	}
+
+	.btn1 {
+		display: block;
+		background: #333;
+		width: 45%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
 	}
 
 }
@@ -815,7 +840,7 @@ div.contact-form h3 {
 	}
 
 	#gallery div.column {
-		width: 24%;
+		width: 23%;
 		display: inline-block;
 		padding: 15px;
 		border: none;
