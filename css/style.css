@@ -94,7 +94,7 @@ ul > li {
 }
 
 /* Landing Page Settings */
-.vidWrapper #landingVid {
+.vidWrapper .landingVid {
 	display: inline-block;
 	position: fixed;
 	min-height: 100%;
@@ -651,8 +651,22 @@ footer {
 		width: 50px;
 		height: 50px;
 		display: inline-block;
+		text-decoration: none;
 		font-size: 2em;
 		color: #000;
+	}
+
+	/* Button Global Settings */
+	.btn {
+		display: block;
+		background: #333;
+		width: 45%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
 	}
 
 	/* Button Setting for Landing Page */
@@ -790,6 +804,19 @@ footer {
 		text-align: right;
 	}
 
+	/* Button Global Settings */
+	.btn {
+		display: block;
+		background: #333;
+		width: 25%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
+	}
+
 	/* Button Setting for Landing Page */
 
 	.btn1 {
@@ -918,5 +945,32 @@ footer {
 		color: #000;
 		font-size: 2em;
 		padding: 0 20px;
+	}
+
+	/* Button Global Settings */
+	.btn {
+		display: block;
+		background: #333;
+		width: 20%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
+	}
+
+	/* Button Setting for Landing Page */
+
+	.btn1 {
+		display: block;
+		background: #333;
+		width: 25%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
 	}
 }
