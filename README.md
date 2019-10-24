@@ -1,3 +1,3 @@
-# csp1
+# Mang Gym
 
 My Very First Capstone Project
