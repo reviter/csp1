@@ -1,12 +1,45 @@
 /* CSS Reset */
+:root {
+	/* CSS variables for easy reuse */
+	--main-color: darkorange;
+	--secondary-color: #333; /* dark gray */
+	--tertiary-color: gold;
+	--text-drop-shadow: 0px 1px 2px #000;
+	--button-border-radius: 8px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	line-height: 1.5;
 	text-align: center;
+}
+
+/* Overlay so text is more readable */
+.overlay {
+	background-color: var(--secondary-color);
+	opacity: 0.5;
+	height: 100vh;
+	width: 100vw;
+}
+
+.small-overlay {
+	height: 550px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 80;
+}
+
+.header-img {
+	position: relative;
+	z-index: 90;
+	text-shadow: var(--text-drop-shadow);
 }
 
 /* Navbar and Logo */
@@ -22,7 +55,7 @@
 .container .nav >li >a {
   	padding-top: 30px;
   padding-bottom: 30px;
-}	
+}
 .container .navbar-toggle {
   	padding: 10px;
   	margin: 25px 15px 25px 0;
@@ -43,13 +76,13 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #333;
+    color: var(--secondary-color);
     line-height: 100px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
 	color: #fff;
-	background-color: 	#333;
+	background-color: 	var(--secondary-color);
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -76,11 +109,10 @@
 
 
 .navbar-right li {
-	background-color: #fff;
+	background-color: var(--tertiary-color);
 	color: #000;
-	text-shadow: 1px 1px 1px #000;
+	/* text-shadow: var(--text-drop-shadow); */
 }
-
 
 ul {
 	padding-left: 0;
@@ -119,13 +151,13 @@ ul > li {
 .wrapper h2 {
 	color: white;
 	font-size: 25px;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .wrapper p {
 	margin-top: -25px;
 	color: #fff;
-	text-shadow: 1px 1px 1px #000;
+	/* text-shadow: var(--text-drop-shadow); */
 }
 
 .quote {
@@ -138,8 +170,8 @@ ul > li {
 
 .wrapper footer {
 	margin-top: -65px;
-	text-shadow: 1px 1px 1px #000;
-	color: indianred;
+	/* text-shadow: var(--text-drop-shadow); */
+	color: var(--main-color);
 	background: rgba(255, 255, 255, 0);
 
 }
@@ -158,9 +190,10 @@ h2 {
 h1,
 h2,
 h3 {
+	font-weight: 700; /* bold */
   margin: 0;
   padding: 1em 0;
-  text-shadow: 1px 1px 1px #000;
+  /* text-shadow: var(--text-drop-shadow); */
 }
 
 p {
@@ -171,7 +204,7 @@ p {
 /* Button Settings for Landing Page */
 .btn1 {
   display: block;
-  background: #333;
+  background: var(--secondary-color);
   width: 45%;
   position: relative;
   color: #fff;
@@ -179,17 +212,19 @@ p {
   padding: 1em 2em;
   border: 1px solid #666;
   margin: 0 auto;
+	border-radius: var(--button-border-radius);
+	text-shadow: none;
 }
 
 .btn1:hover {
-  background: #eaeaea;
-  color: #333;
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 /* Button Global Settings */
 .btn {
   display: block;
-  background: #333;
+  background: var(--secondary-color);
   width: 45%;
   position: relative;
   color: #fff;
@@ -197,11 +232,13 @@ p {
   padding: 1em 2em;
   border: 1px solid #666;
   margin: 0 auto;
+	border-radius: var(--button-border-radius);
+	text-shadow: none;
 }
 
 .btn:hover {
-  background: #eaeaea;
-  color: #333;
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 
@@ -211,7 +248,7 @@ p {
 #showcase {
   min-height: 550px;
   text-align: center;
-  text-shadow: 1px 1px 1px #000;
+  /* text-shadow: var(--text-drop-shadow); */
 }
 
 #showcase .bg-image {
@@ -260,7 +297,7 @@ p {
 #trial {
 	padding: 0 15px;
 	height: 250px;
-	background-color: indianred;
+	background-color: var(--main-color);
 }
 
 #trial h1 {
@@ -308,8 +345,8 @@ p {
 
 /* Gallery and Newsletter Settings */
 #gallery {
-	background: #333;
-	border: 10px solid indianred;	
+	background: var(--secondary-color);
+	border: 10px solid var(--main-color);
 	color: #fff;
 }
 
@@ -320,7 +357,7 @@ p {
 #newsletter {
 	padding: 0 15px;
 	height: 450px;
-	background-color: indianred;
+	background-color: var(--main-color);
 }
 
 #newsletter h2 {
@@ -348,7 +385,7 @@ img:hover {
 
 /* About Us Settings */
 #about {
-	background: indianred;
+	background: var(--main-color);
 }
 
 #about h2 {
@@ -367,13 +404,13 @@ img:hover {
 }
 
 #services h2 {
-	color: indianred;
+	color: var(--main-color);
 	font-size: 2.5em;
 	text-shadow: none;
 }
 
 #services h4 {
-	color: indianred;
+	color: var(--main-color);
 	font-size: 1.8em;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -390,7 +427,7 @@ img:hover {
 
 /* Membership Settings */
 #projects {
-	background: indianred;
+	background: var(--main-color);
 }
 
 #projects h2 {
@@ -424,7 +461,7 @@ input[type=submit]:hover {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #333;
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -446,10 +483,10 @@ input[type=submit]:hover {
 }
 
 
-/* Map and Contact Details */
+/* Map and var(--secondary-color) Details */
 #map > h2 {
 	font-size: 2em;
-	color: indianred;
+	color: var(--main-color);
 	text-transform: uppercase;
 }
 
@@ -458,7 +495,7 @@ input[type=submit]:hover {
 }
 
 .col-map h4 {
-	color: 	indianred;
+	color: 	var(--main-color);
 }
 
 .col-map p {
@@ -481,7 +518,7 @@ input[type=submit]:hover {
 /* Contact Info Form */
 div.contact-form {
     border-radius: 5px;
-    background-color: indianred;
+    background-color: var(--main-color);
     padding: 20px;
 }
 
@@ -492,7 +529,7 @@ div.contact-form h3 {
 
 /* Footer Settings */
 footer {
-	background: #000;
+	background: var(--secondary-color);
 	color: #fff;
 	padding: 5px;
 	height: 100px;
@@ -501,7 +538,7 @@ footer {
 
 .small-1 {
 	color: #fff;
-	text-shadow: 1px 1px 1px black;
+	/* text-shadow: 1px 1px 1px black; */
 }
 
 .small-2 {
@@ -517,21 +554,21 @@ footer {
 	.wrapper h2 {
 		color: white;
 		font-size: 15px;
-		font-weight: normal;
+		font-weight: bold;
 	}
 
 	.wrapper p {
 		margin-top: -25px;
 		font-size: 10px;
 		color: #fff;
-		text-shadow: 1px 1px 1px #000;
+		/* text-shadow: var(--text-drop-shadow); */
 	}
 
 	.wrapper footer {
 		margin-top: -65px;
 		font-size: 9px;
-		text-shadow: 1px 1px 1px #000;
-		color: indianred;
+		/* text-shadow: var(--text-drop-shadow); */
+		color: var(--main-color);
 		background: rgba(255, 255, 255, 0);
 	}
 
@@ -578,7 +615,7 @@ footer {
 	img.about2 {
 		height: 240px;
 	}
-	
+
 	/* Programs / Trainings / Membership */
 	#services > div.column,
 	#gallery > div.column {
@@ -621,7 +658,7 @@ footer {
 		width: 	100%;
 		height: 200px;
 	}
-	
+
 	/* Footer */
 	footer {
 		text-align: center;
@@ -638,7 +675,7 @@ footer {
 		display: inline-block;
 		margin-top: 50px;
 		width: 100%;
-		text-align: center;	
+		text-align: center;
 	}
 
 	.small-2 {
@@ -653,13 +690,13 @@ footer {
 		display: inline-block;
 		text-decoration: none;
 		font-size: 2em;
-		color: #000;
+		color: var(--secondary-color);
 	}
 
 	/* Button Global Settings */
 	.btn {
 		display: block;
-		background: #333;
+		background: var(--secondary-color);
 		width: 45%;
 		position: relative;
 		color: #fff;
@@ -674,7 +711,7 @@ footer {
     display: block;
     margin: 0 auto;
     padding: .3em .3em;
-    background: #333;
+    background: var(--secondary-color);
     position: relative;
     width: 70%;
     color: #fff;
@@ -712,7 +749,7 @@ footer {
 		transform: none;
 		margin: 0 auto;
 	}
-	
+
 	/* Gallery */
 	#gallery div.column{
 		width: 70%;
@@ -785,7 +822,7 @@ footer {
 	div#disclaimer .small-2 {
 		display: inline-block;
 		width: 75%;
-		text-align: center;	
+		text-align: center;
 	}
 
 	/* Social Media Icons */
@@ -798,7 +835,7 @@ footer {
 	footer div.contact {
 		width: 50px;
 		height: 50px;
-		color: #000;
+		color: var(--secondary-color);
 		font-size: 2em;
 		display: inline-block;
 		text-align: right;
@@ -807,7 +844,7 @@ footer {
 	/* Button Global Settings */
 	.btn {
 		display: block;
-		background: #333;
+		background: var(--secondary-color);
 		width: 25%;
 		position: relative;
 		color: #fff;
@@ -821,7 +858,7 @@ footer {
 
 	.btn1 {
 		display: block;
-		background: #333;
+		background: var(--secondary-color);
 		width: 45%;
 		position: relative;
 		color: #fff;
@@ -862,7 +899,7 @@ footer {
 	.hero p {
 		font-size: 1.5em;
 	}
-	
+
 	/* Gallery / Newsletter */
 	#gallery div.column {
 		width: 23%;
@@ -904,7 +941,7 @@ footer {
 		width: 80%;
 		margin-top: -175px;
 	}
-	
+
 	/* Google Map Location / Contact Form */
 	.col-map {
 		width: 80%;
@@ -930,7 +967,7 @@ footer {
 	div#disclaimer .small-2 {
 		display: inline-block;
 		width: 50%;
-		text-align: center;	
+		text-align: center;
 	}
 
 	/* Social Media Icons */
@@ -942,7 +979,7 @@ footer {
 
 	div.contact {
 		display: inline-block;
-		color: #000;
+		color: var(--secondary-color);
 		font-size: 2em;
 		padding: 0 20px;
 	}
@@ -950,7 +987,7 @@ footer {
 	/* Button Global Settings */
 	.btn {
 		display: block;
-		background: #333;
+		background: var(--secondary-color);
 		width: 20%;
 		position: relative;
 		color: #fff;
@@ -964,7 +1001,7 @@ footer {
 
 	.btn1 {
 		display: block;
-		background: #333;
+		background: var(--secondary-color);
 		width: 25%;
 		position: relative;
 		color: #fff;
