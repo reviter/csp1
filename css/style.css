@@ -7,7 +7,8 @@
 	font-size: 1em;
 	line-height: 1.5;
 	text-align: center;
-	
+	/*for smooth scrolling*/
+	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
 
