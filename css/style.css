@@ -1109,14 +1109,7 @@ div.contact-form h3 {
 
 
 /* Image hover effects*/
-  
-  .main-title{
-	color: #2d2d2d;
-	text-align: center;
-	text-transform: capitalize;
-	padding: 0.7em 0;
-  }
-  
+
   .container-img{
 	padding: 1em 0;
 	float: left;
@@ -1194,14 +1187,6 @@ div.contact-form h3 {
 	opacity: 1;
   }
   
-  .content-details h3{
-	color: #fff;
-	font-weight: 500;
-	letter-spacing: 0.15em;
-	margin-bottom: 0.5em;
-	text-transform: uppercase;
-  }
-  
   .content-details p{
 	color: #fff;
 	font-size: 1.3em;
@@ -1209,18 +1194,6 @@ div.contact-form h3 {
   
   .fadeIn-bottom{
 	top: 80%;
-  }
-  
-  .fadeIn-top{
-	top: 20%;
-  }
-  
-  .fadeIn-left{
-	left: 20%;
-  }
-  
-  .fadeIn-right{
-	left: 80%;
   }
 
   /* New header*/
@@ -1238,15 +1211,6 @@ div.contact-form h3 {
 	position: relative;
 
 }
-
-.brand-box {
-	position: absolute;
-	top: 40px;
-	left: 40px;
-}
-
-.brand { font-size: 20px; }
-
 .text-box {
 	position: absolute;
 	top: 50%;
