@@ -44,14 +44,24 @@
 	</div>
 
 	<!-- Header Showcase -->
-	<header id="showcase" class="grid">
+	<header class="header">
+		
+		<div class="text-box">
+			<h1 class="heading-primary">
+				<span class="heading-primary-main">WELCOME TO <span style="color:indianred;">MANG GYM</span></span>
+				<span class="heading-primary-sub">A Haven for Everybody</span>
+			</h1>
+			<a href="#trial" class="btn btn-white btn-animated">Join!</a>
+		</div>
+	</header>
+	<!-- <header id="showcase" class="grid">
 		<div class="bg-image"></div>
 		<div class="content-wrap">
 			<h1>WELCOME TO <span style="color: yellow">MANG GYM</span></h1>
 			<p>A Haven for Everybody</p>
 			<a href="#" class="btn">Join Now!</a>
 		</div>
-	</header>
+	</header> -->
 
 	<!-- Main Area / Home -->
 	<main class="container">
@@ -59,7 +69,7 @@
 			<div class="freetrial">
 				<h1>FREE TRIAL</h1>
 				<p>Enjoy a 30 days FREE ACCESS to all of our classes and facilities</p>
-				<select id="location" name="Location">
+				<select class="btn btn-white" id="location" name="Location">
 					<option value="" disabled selected>Select your location</option>
 					<option value="fairview">Fairview</option>
 					<option value="manila">Manila</option>
@@ -73,7 +83,7 @@
 		<section id="banner">
 			<div class="hero">
 				<h1>History of Gym</h1>
-				<img src="img/oldgym.jpeg" style="width:100%;" border="0" alt="Null">
+					<img class="mid-pic" src="img/oldgym.jpeg" alt="Null">
 				<p>A gym, also referred as gymnasium, is an open air or covered location for gymnastics, athletics, and gymnastic services. The word is derived from the ancient Greek gymnasium. They are commonly found in athletic and fitness centers, and as activity and learning spaces in educational institutions. "Gym" is also slang for "fitness center", which is often an indoor facility.
 
 				Gymnasia apparatus such as barbells, parallel bars, jumping board, running path, tennis-balls, cricket field, fencing area, and so forth are used as exercises. In safe weather, outdoor locations are the most conducive to health. Gyms were popular in ancient Greece. Their curricula included Gymnastica militaria or self-defense, gymnastica medica, or physical therapy to help the sick and injured, and gymnastica athletica for physical fitness and sports, from boxing to dancing.</p>
@@ -85,22 +95,44 @@
 			<h2>MEMBER'S GALLERY</h2>
 			<br>
 			<h2>DYNAMIC BODYBUILDING TRAININGS (DBT)</h2>
-			<div class="column">
-				<img src="img/program1.jpg">
-				<p>DMT uses the body’s natural movement patterns through three-dimensional exercises.</p>
-			</div>
-			<div class="column">
-				<img src="img/program2.jpg">
-				<p>Movements can just use your body weight or be loaded for greater benefit.</p>
-			</div>
-			<div class="column">
-				<img src="img/program3.jpg">
-				<p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
-			</div>
-			<div class="column">
-				<img src="img/program4.jpg">
-				<p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
-			</div>
+			<div class="container-img">
+				<div class="content">
+					<div class="content-overlay"></div>
+					<img class="content-image" src="img/program1.jpg">
+					<div class="content-details fadeIn-bottom">
+					  <p class="content-text">DMT uses the body’s natural movement patterns through three-dimensional exercises.</p>
+					</div>
+				</div>
+			  </div>
+			  
+			  <div class="container-img">
+				<div class="content">
+					<div class="content-overlay"></div>
+					<img class="content-image" src="img/program2.jpg">
+					<div class="content-details fadeIn-bottom">
+					  <p>Movements can just use your body weight or be loaded for greater benefit.</p>
+					</div>
+				</div>
+			  </div>
+			  
+			  <div class="container-img">
+				<div class="content">
+					<div class="content-overlay"></div>
+					<img class="content-image" src="img/program3.jpg">
+					<div class="content-details fadeIn-bottom">
+					  <p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
+					</div>
+				</div>
+			  </div>
+			  <div class="container-img">
+				<div class="content">
+					<div class="content-overlay"></div>
+					<img class="content-image" src="img/program4.jpg">
+					<div class="content-details fadeIn-bottom">
+					  <p>Dynamic movement training is important to help you maintain a healthy body and healthy mind.</p>
+					</div>
+				</div>
+			  </div>
 		</section>
 
 		<section id="newsletter">
@@ -115,8 +147,32 @@
 		</section>
 	</main>
 
-		<!-- Footer -->
-		<footer id="contact">
+	<!-- Footer -->
+	  <footer class="site-footer">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-12">
+			  <p class="copyright-text">&copy; Copyright 2017 | Stephene Canciller | <span style="color:indianred">Mang Gym</span> 
+			  </p>
+			</div>
+  
+			<div class="col-md-4 col-sm-6 col-xs-12">
+			  <ul class="social-icons">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>   
+			  </ul>
+			</div>
+		  </div>
+		  <div class="row">
+			  
+			<small class="copyright-text">Disclaimer: No copyright infringement is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner.</small>
+		  </div>
+		</div>
+  </footer>
+
+		<!-- <footer id="contact">
 			<small class="small-1">&copy; Copyright 2017 | Stephene Canciller | <span style="color: yellow">Mang Gym</span> </small>
 			<div id="disclaimer">
 				<div class="disclaimer-last">
@@ -138,7 +194,7 @@
 					<i class="fa fa-youtube" aria-hidden="true"></i>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 
 	<!-- Import Jquery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
