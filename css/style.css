@@ -16,7 +16,8 @@
 }
 
 .container .navbar-brand {
- 	height: 80px;
+	 height: 80px;
+	 border: 12px solid black;
 }
 
 .container .nav >li >a {
@@ -62,8 +63,11 @@
 }
 .navbar-brand>img {
   	height: 100%;
-  	width: auto;
+	  width: auto;
+	  background-color: white;
+	
 }
+
 
 .mainlogosvg {
 	transform: scale(0.1, 0.1);
@@ -111,6 +115,7 @@ ul > li {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	text-shadow: 2px 1px black;
 	transform: translate(-50%, -50%);
 	padding: 25px;
 	border-radius: 2%;
@@ -1006,6 +1011,9 @@ footer {
 
 .navbar .navbar-collapse .nav li a:hover {
 	box-shadow: inset 0px -25px 20px -25px #dc9e15;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .navbar .navbar-collapse .nav li a:before {
