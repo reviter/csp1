@@ -1,0 +1,1108 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/* Navbar and Logo */
+.container {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container .navbar-brand {
+ 	height: 80px;
+}
+
+.container .nav >li >a {
+  	padding-top: 30px;
+  padding-bottom: 30px;
+}	
+.container .navbar-toggle {
+  	padding: 10px;
+  	margin: 25px 15px 25px 0;
+}
+
+.navbar-inverse {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #000;
+    min-height: 100px;
+    text-align: center;
+}
+
+.container-fluid {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #333;
+    line-height: 100px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+	background-color: 	#333;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #000;
+    z-index:3;
+}
+
+.navbar-brand {
+  	padding: 0px;
+}
+.navbar-brand>img {
+  	height: 100%;
+  	width: auto;
+}
+
+.mainlogosvg {
+	transform: scale(0.1, 0.1);
+	position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+
+.navbar-right li {
+	background-color: #fff;
+	color: #000;
+	text-shadow: 1px 1px 1px #000;
+}
+
+
+ul {
+	padding-left: 0;
+}
+
+ul > li {
+	list-style-type: none;
+    line-height: 3em;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+/* Landing Page Settings */
+.vidWrapper .landingVid {
+	display: inline-block;
+	position: fixed;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -100;
+	top: 0;
+	left: 0;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 25px;
+	border-radius: 2%;
+}
+
+.wrapper h2 {
+	color: white;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.wrapper p {
+	margin-top: -25px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.quote {
+	display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.wrapper footer {
+	margin-top: -65px;
+	text-shadow: 1px 1px 1px #000;
+	color: indianred;
+	background: rgba(255, 255, 255, 0);
+
+}
+
+
+/* h123 and P Global Settings */
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2em;
+	color: #000;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+  text-shadow: 2px 2px 5px red;
+}
+
+p {
+  margin: 0;
+  padding: 2em 2em;
+}
+
+/* Button Settings for Landing Page */
+.btn1 {
+  display: block;
+  background: #333;
+  width: 45%;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0 auto;
+}
+
+.btn1:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+/* Button Global Settings */
+.btn {
+  display: block;
+  background: #333;
+  width: 45%;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+
+
+
+/* Header Showcase */
+#showcase {
+  min-height: 550px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333 url("img/people.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+#showcase {
+	filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .1s ease-in-out;
+}
+
+#showcase:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+  color: rgb(10, 10, 10);
+}
+
+#showcase p {
+	color: rgb(221, 19, 19);
+}
+
+
+/* Main Area  */
+
+/* Free Trial */
+#trial {
+	padding: 0 15px;
+	height: 250px;
+	background-color: indianred;
+}
+
+#trial h1 {
+	font-size: 2em;
+	color: #fff;
+}
+
+#trial p {
+	margin-top: -15px;
+	font-size: 1em;
+	color: #fff;
+}
+
+#location {
+	font-size: 1.4em;
+}
+
+
+/* History Settings / Home */
+#banner {
+	background-color: rgba(255, 255, 255, 0.4);
+	height: 700px;
+	position: relative;
+}
+
+#banner h1 {
+	color: #000;
+}
+
+#banner p {
+	color: #000;
+}
+
+.hero {
+	width: 40%;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Gallery and Newsletter Settings */
+#gallery {
+	background: #333;
+	border: 10px solid indianred;	
+	color: #fff;
+}
+
+#gallery h2 {
+	color: #fff;
+}
+
+#newsletter {
+	padding: 0 15px;
+	height: 450px;
+	background-color: indianred;
+}
+
+#newsletter h2 {
+	color: #fff;
+	font-size: 1.8em;
+}
+
+#newsletter p {
+	color: #fff;
+	font-size: 1.2em;
+}
+
+/* Images Global Settings */
+img {
+	filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .1s ease-in-out;
+}
+
+img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+/* About Us Settings */
+#about {
+	background: indianred;
+}
+
+#about h2 {
+	color: #fff;
+	margin: 0 20px;
+}
+
+#about p {
+	color: #fff;
+}
+
+/* Trainings / Programs Settings */
+#services {
+	background: #fff;
+	color: #fff;
+}
+
+#services h2 {
+	color: indianred;
+	font-size: 2.5em;
+	text-shadow: none;
+}
+
+#services h4 {
+	color: indianred;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+#services p {
+	color: #7a7a7a;
+}
+
+#services > div.column,
+#gallery > div.column {
+	border: 1px solid #fff;
+}
+
+/* Membership Settings */
+#projects {
+	background: indianred;
+}
+
+#projects h2 {
+	color: #fff;
+}
+
+/* Input Global Settings */
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Map and Contact Details */
+#map > h2 {
+	font-size: 2em;
+	color: indianred;
+	text-transform: uppercase;
+}
+
+.col-map {
+    width: 50%;
+}
+
+.col-map h4 {
+	color: 	indianred;
+}
+
+.col-map p {
+	font-size: 	1.1em;
+}
+
+.col-map h4 {
+	font-size: 	1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Clear floats after the columns */
+#map :after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Contact Info Form */
+div.contact-form {
+    border-radius: 5px;
+    background-color: indianred;
+    padding: 20px;
+}
+
+div.contact-form h3 {
+	color: #fff;
+}
+
+
+/* Footer Settings */
+footer {
+	background: #764f4f;
+	color: #fff;
+	padding: 5px;
+	height: 93px;
+	line-height: 100px;
+}
+
+.small-1 {
+	color: #fff;
+	text-shadow: 1px 1px 1px black;
+}
+
+.small-2 {
+	color: #000;
+	font-size: 0.65em;
+}
+
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+
+	/* Landing Page */
+	.wrapper h2 {
+		color: white;
+		font-size: 15px;
+		font-weight: normal;
+	}
+
+	.wrapper p {
+		margin-top: -25px;
+		font-size: 10px;
+		color: #fff;
+		text-shadow: 1px 1px 1px #000;
+	}
+
+	.wrapper footer {
+		margin-top: -65px;
+		font-size: 9px;
+		text-shadow: 1px 1px 1px #000;
+		color: indianred;
+		background: rgba(255, 255, 255, 0);
+	}
+
+	/* Main */
+	.container {
+		width: 100%;
+	}
+
+	/* Home / History */
+	#location {
+		width: 100%;
+	}
+
+	#banner {
+		height: auto;
+	}
+
+	.hero {
+		width: 100%;
+		position: static;
+		top: 0;
+		left: 0;
+		transform: none;
+		margin: 0 auto;
+	}
+
+	.hero p {
+		font-size: 1.2em;
+	}
+
+	/* About Us */
+	#about .about1 {
+		width: 100%;
+	}
+
+	#about .about2 {
+		width: 100%;
+	}
+
+	#about > p {
+		font-size: 1.2em;
+	}
+
+	img.about2 {
+		height: 240px;
+	}
+	
+	/* Programs / Trainings / Membership */
+	#services > div.column,
+	#gallery > div.column {
+		border: none;
+	}
+
+	#services img,
+	#gallery img,
+	#map iframe {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	#projects {
+		width: 100%;
+	}
+
+	#projects img {
+		width: 100%;
+		margin-top: -40px;
+	}
+
+	/* Contact / Google Map Location / Form */
+	#map {
+		width: 	100%;
+	}
+
+	.col-map {
+		margin: 0 auto;
+		float: 	left;
+		width: 	100%;
+	}
+
+	.col-map iframe {
+		height: 250px;
+		width: 	100%;
+	}
+
+	.col-map img {
+		width: 	100%;
+		height: 200px;
+	}
+	
+	/* Footer */
+	footer {
+		text-align: center;
+	}
+
+	.small-1 {
+		display: block;
+		margin-bottom: 15px;
+		margin-top: 25px;
+		font-size: 1.1em;
+	}
+
+	div#disclaimer .small-2 {
+		display: inline-block;
+		margin-top: 50px;
+		width: 100%;
+		text-align: center;	
+	}
+
+	.small-2 {
+		margin-bottom: 15px;
+		font-size: .5em;
+	}
+
+	/* Social Media Icons */
+	div.contact {
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 2em;
+		color: #000;
+	}
+
+	/* Button Global Settings */
+	.btn {
+		display: block;
+		background: #333;
+		width: 45%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		/* border: 1px solid #666; */
+		margin: 0 auto;
+		border-radius: 30px;
+	}
+
+	/* Button Setting for Landing Page */
+	.btn1 {
+    display: block;
+    margin: 0 auto;
+    padding: .3em .3em;
+    background: #333;
+    position: relative;
+    width: 70%;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #666;
+	}
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+
+	/* Main */
+	.container {
+		width: 100%;
+	}
+
+	/* Home / History */
+	#location {
+		width: 50%;
+	}
+
+	#banner {
+		height: auto;
+	}
+
+	.hero p {
+		font-size: 1.5em;
+	}
+
+	.hero {
+		width: 95%;
+		position: static;
+		top: 0;
+		left: 0;
+		transform: none;
+		margin: 0 auto;
+	}
+	
+	/* Gallery */
+	#gallery div.column{
+		width: 70%;
+		display: inline-block;
+		padding: 15px;
+		border: none;
+	}
+
+	/* About Us */
+	#about > p {
+		font-size: 1.5em;
+	}
+
+	/* Programs / Trainings / Membership */
+	#services > div.column {
+		width: 30%;
+		display: inline-block;
+		padding: 11px;
+		border: none;
+	}
+
+	#services img,
+	#gallery img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.column h4 {
+		font-size: 1.8em;
+	}
+
+	#projects {
+		width: 100%;
+	}
+
+	#projects img {
+		width: 100%;
+		margin-top: -100px;
+		margin-bottom: 20px;
+	}
+
+	.column p,
+	#projects p {
+		font-size: 1.5em;
+	}
+
+	/* Google Map Location / Contact Form */
+	.col-map {
+		width: 60%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.col-map iframe {
+		width: 	100%;
+		height: 256px;
+	}
+
+	.col-map img {
+		width: 	100%;
+		height: 256px;
+	}
+
+	/* Footer */
+	.small-1 {
+		display: inline-block;
+		width: 29%;
+	}
+
+	div#disclaimer .small-2 {
+		display: inline-block;
+		width: 75%;
+		text-align: center;	
+	}
+
+	/* Social Media Icons */
+	div#socialMedia {
+		display: inline-block;
+		width: 32%;
+		text-align: left;
+	}
+
+	footer div.contact {
+		width: 50px;
+		height: 50px;
+		color: #000;
+		font-size: 2em;
+		display: inline-block;
+		text-align: right;
+	}
+
+	/* Button Global Settings */
+	.btn {
+		display: block;
+		background: #333;
+		width: 25%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
+	}
+
+	/* Button Setting for Landing Page */
+
+	.btn1 {
+		display: block;
+		background: #333;
+		width: 45%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
+	}
+
+}
+
+/* Desktop devices */
+@media only screen and (min-width: 961px) {
+
+	/* Main */
+	.container {
+		width: 100%;
+	}
+
+	/* Home / History */
+	#location {
+		width: 50%;
+	}
+
+	#banner {
+		height: auto;
+	}
+
+	.hero {
+		width: 95%;
+		position: static;
+		top: 0;
+		left: 0;
+		transform: none;
+		margin: 0 auto;
+	}
+
+	.hero p {
+		font-size: 1.5em;
+	}
+	
+	/* Gallery / Newsletter */
+	#gallery div.column {
+		width: 23%;
+		display: inline-block;
+		padding: 15px;
+		border: none;
+	}
+
+	#gallery img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.newsform {
+		width: 50%;
+		margin: 0 auto;
+		height: 200px;
+	}
+
+	/* Programs / Trainings / Membership */
+	#services div.column {
+		width: 32%;
+		display: inline-block;
+		padding: 15px;
+		font-size: 15px;
+		border: none;
+	}
+
+	#services img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#projects {
+		width: 100%;
+	}
+
+	#projects img {
+		width: 80%;
+		margin-top: -175px;
+	}
+	
+	/* Google Map Location / Contact Form */
+	.col-map {
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.col-map img {
+		width: 	100%;
+	}
+
+	.col-map iframe {
+		width: 	100%;
+		height: 474px;
+	}
+
+	/* Footer */
+	.small-1 {
+		display: inline-block;
+		width: 51%;
+	}
+
+	div#disclaimer .small-2 {
+		display: inline-block;
+		width: 50%;
+		text-align: center;	
+	}
+
+	/* Social Media Icons */
+	div#socialMedia {
+		display: inline-block;
+		width: 21%;
+		text-align: left;
+	}
+
+	div.contact {
+		display: inline-block;
+		color: #000;
+		font-size: 2em;
+		padding: 0 20px;
+	}
+
+	/* Button Global Settings */
+	.btn {
+		display: block;
+		background: #333;
+		width: 20%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
+	}
+
+	/* Button Setting for Landing Page */
+
+	.btn1 {
+		display: block;
+		background: #333;
+		width: 25%;
+		position: relative;
+		color: #fff;
+		text-decoration: none;
+		padding: 1em 2em;
+		border: 1px solid #666;
+		margin: 0 auto;
+	}
+}
+
+
+/* HEADER NAV */
+.navbar {
+    background-color: #333333;
+    border-top: 3px solid #dc9e15;
+    border-bottom: 0;
+    margin: 0;
+}
+
+.navbar .container-fluid {
+	background-color: transparent;
+}
+
+.navbar .navbar-collapse .nav {
+	margin-bottom: 0;
+}
+
+.navbar .navbar-collapse .nav li {
+    border-bottom: 0;
+    background: transparent;
+    text-shadow: initial;
+}
+
+.navbar .navbar-collapse .nav li a {
+	box-shadow: initial;
+	text-transform: uppercase;
+	transition: all 0.7s ease-out;
+}
+
+.navbar .navbar-collapse .nav li a:hover {
+	box-shadow: inset 0px -25px 20px -25px #dc9e15;
+}
+
+.navbar .navbar-collapse .nav li a:before {
+	content: "";
+	background-color: transparent;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 3px;
+    transition: all 0.7s ease-out;
+}
+
+.navbar .navbar-collapse .nav li a:hover:before  {
+	background-color: #dc9e15;
+	left: 0;
+	width: 100%;
+}
+
+.navbar .navbar-collapse .nav li a.active:before {
+	content: "";
+	background-color: #dc9e15;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+}
+
+.navbar-toggler {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-inverse .navbar-collapse {
+		border-color: #FFFFFF;
+	}
+
+	.navbar .navbar-collapse .nav li a:not(.active){
+		border-bottom: 1px solid #FFFFFF;
+	}
+
+	.navbar .navbar-collapse .nav li a:hover:not(.active){
+		border-bottom-color: transparent;
+	}
+
+	.navbar-toggler {
+		display: block;
+		background-color: transparent;
+		position: absolute;
+		top: 30px;
+		margin-top: -8px;
+		right: 15px;
+		width: 35px;
+		height: 32px;
+		padding: .25rem .25rem;
+		font-size: 1.25rem;
+		line-height: 1;
+		border: 1px solid transparent;
+		border-radius: .25rem;
+		outline: none;
+	}
+
+	.navbar-toggler-icon {
+		position: relative;
+		display: block;
+		background-color: #FFFFFF;
+		border-radius: 3px;
+		height: 3px;
+		width: 100%;
+	}
+
+	.navbar-toggler-icon:before,
+	.navbar-toggler-icon:after {
+		content: "";
+		position: absolute;
+		right: 0;
+		display: block;
+		background-color: #FFFFFF;
+		border-radius: 3px;
+		height: 3px;
+		width: 100%;
+		max-width: 80%;
+		transition: all 0.7s ease-out;
+	}
+
+	.navbar-toggler-icon:before {
+		top: -7px;
+	}
+
+	.navbar-toggler-icon:after {
+		top: 7px;
+	}
+
+	.navbar-toggler:hover .navbar-toggler-icon:before,
+	.navbar-toggler:hover .navbar-toggler-icon:after {
+		max-width: 100%;
+	}
+}
