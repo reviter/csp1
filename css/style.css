@@ -481,8 +481,9 @@ input[type=submit]:hover {
 /* Contact Info Form */
 div.contact-form {
     border-radius: 5px;
-    background-color: indianred;
+    background-color: #fffff1;
     padding: 20px;
+	box-shadow: 0 0 39px 0px #888888;
 }
 
 div.contact-form h3 {
