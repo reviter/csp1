@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 /* CSS Reset */
 * {
 	margin: 0;
@@ -116,16 +119,21 @@ ul > li {
 	border-radius: 2%;
 }
 
-.wrapper h2 {
+.wrapper h1 {
 	color: white;
-	font-size: 25px;
-	font-weight: normal;
+    font-size: 6rem;
+    font-weight: normal;
+    font-family: 'Baloo 2', 'cursive';
+    height: 138px;
 }
 
 .wrapper p {
-	margin-top: -25px;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000;
+    margin-top: -25px;
+    color: #5c5a5a;
+    text-shadow: 1px 1px 1px #000;
+    font-family: baloo;
+    font-size: 23px;
+    font-family: 'Courgette', cursive;
 }
 
 .quote {
@@ -137,10 +145,12 @@ ul > li {
 }
 
 .wrapper footer {
-	margin-top: -65px;
-	text-shadow: 1px 1px 1px #000;
-	color: indianred;
-	background: rgba(255, 255, 255, 0);
+    margin-top: -65px;
+    text-shadow: 1px 1px 1px #000;
+    color: #7a7a7a;
+    background: rgba(255, 255, 255, 0);
+    font-size: 17px;
+    font-family: 'Courgette', cursive;
 
 }
 
@@ -179,11 +189,15 @@ p {
   padding: 1em 2em;
   border: 1px solid #666;
   margin: 0 auto;
+  border-radius: 28px;
+  font-size: 18px;
+  font-family: 'Baloo 2', 'cursive';
 }
 
 .btn1:hover {
   background: #eaeaea;
   color: #333;
+  text-decoration: none;
 }
 
 /* Button Global Settings */
@@ -522,9 +536,10 @@ footer {
 
 	.wrapper p {
 		margin-top: -25px;
-		font-size: 10px;
-		color: #fff;
-		text-shadow: 1px 1px 1px #000;
+    	color: #fff;
+    	text-shadow: 1px 1px 1px #000;
+    	font-family: 'Courgette', cursive;
+    	color: #c57d55;
 	}
 
 	.wrapper footer {
