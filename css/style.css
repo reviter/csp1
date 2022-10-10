@@ -184,6 +184,7 @@ p {
 .btn1:hover {
   background: #eaeaea;
   color: #333;
+  width:35%;
 }
 
 /* Button Global Settings */
