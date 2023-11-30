@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-	<!-- Font awesome -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
-	<!-- Imports Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <!-- Imports Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
 
-	<!-- Import CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Import CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-	<title>Mang Gym</title>
-</head>
-<body>
+    <title>Mang Gym</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/mainlogo.svg" alt="Mang Gym"
+        /></a>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Landing Page -->
+    <div class="vidWrapper">
+      <video
+        class="landingVid"
+        preload="auto"
+        src="img/trainingvid.mov"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+    </div>
 
-	<!-- Landing Page -->
-	<div class="vidWrapper">
-		<video class="landingVid " preload="auto" src="img/trainingvid.mov" autoplay muted loop playsinline>
-		</video>
-	</div>
+    <!-- Wrapper Container -->
+    <div class="wrapper">
+      <h2>WELCOME TO <span style="color: yellow">MANG GYM</span></h2>
+      <p class="quote">
+        “THINKk BIG AND DON'T LISTEN TO PEOPLE WHO TELL YOU IT CAN'T BE DONE.
+        LIFE'S TOO SHORT TO THINK SMALL.”
+      </p>
+      <footer>-- BY TIM FERRISS</footer>
+      <a href="home.html" class="btn1">JOIN NOW!</a>
+    </div>
 
-	<!-- Wrapper Container -->
-	<div class="wrapper">
-		<h2>WELCOME TO <span style="color: yellow">MANG GYM</span></h2>
-		<p class="quote">“THINKk BIG AND DON'T LISTEN TO PEOPLE WHO TELL YOU IT CAN'T BE DONE. LIFE'S TOO SHORT TO THINK SMALL.”</p><footer>-- BY TIM FERRISS</footer>
-		<a href="home.html" class="btn1">JOIN NOW!</a>
-	</div>
+    <!-- Import Jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-	<!-- Import Jquery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://use.fontawesome.com/5743362e56.js"></script>
 
-	<!-- Font Awesome CDN -->
-	<script src="https://use.fontawesome.com/5743362e56.js"></script>
-
-	<!-- Import Bootstrap Javascript -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-
-</body>
+    <!-- Import Bootstrap Javascript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
