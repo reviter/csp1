@@ -15,6 +15,23 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<title>Mang Gym</title>
+		 <script>
+         document.addEventListener("DOMContentLoaded", function() {
+            fetch('footer.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        });
+    </script>
 </head>
 <body>
 
@@ -106,30 +123,7 @@
 	</main>
 
 		<!-- Footer -->
-		<footer id="contact">
-			<small class="small-1">&copy; Copyright 2017 | Stephene Canciller | <span style="color: yellow">Mang Gym</span> </small>
-			<div id="disclaimer">
-				<div class="disclaimer-last">
-					<small class="small-2">Disclaimer: No copyright infringement is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner.</small>
-				</div>
-			</div>
-
-			<!-- Social Media Icons -->
-			<div id="socialMedia">
-				<div class="contact">
-					<i class="fa fa-facebook" aria-hidden="true"></i>
-				</div>
-				<div class="contact">
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-				</div>
-				<div class="contact">
-					<i class="fa fa-instagram" aria-hidden="true"></i>
-				</div>
-				<div class="contact">
-					<i class="fa fa-youtube" aria-hidden="true"></i>
-				</div>
-			</div>
-		</footer>
+		<div id="footer"></div>
 
 	<!-- Import Jquery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
