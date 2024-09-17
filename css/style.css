@@ -65,6 +65,17 @@
   	width: auto;
 }
 
+/* Animation and Hover Effects */
+.navbar-brand img {
+	transition: transform 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+	transform: scale(1.1); /* Slightly enlarge the logo */
+  }
+
+/* --- */
+
 .mainlogosvg {
 	transform: scale(0.1, 0.1);
 	position: absolute;
@@ -79,11 +90,17 @@
 	background-color: #fff;
 	color: #000;
 	text-shadow: 1px 1px 1px #000;
+	transition: transform 0.3s ease;
+	
+}
+.navbar-right li:hover{
+	transform: scale(1.1);
 }
 
 
 ul {
 	padding-left: 0;
+	
 }
 
 ul > li {
@@ -491,7 +508,7 @@ div.contact-form h3 {
 
 
 /* Footer Settings */
-footer {
+/* footer {
 	background: #000;
 	color: #fff;
 	padding: 5px;
@@ -507,7 +524,7 @@ footer {
 .small-2 {
 	color: #000;
 	font-size: 0.65em;
-}
+} */
 
 
 /* Mobile devices */
@@ -623,7 +640,7 @@ footer {
 	}
 	
 	/* Footer */
-	footer {
+	/* footer {
 		text-align: center;
 	}
 
@@ -644,17 +661,17 @@ footer {
 	.small-2 {
 		margin-bottom: 15px;
 		font-size: .5em;
-	}
+	} */
 
 	/* Social Media Icons */
-	div.contact {
+	/* div.contact {
 		width: 50px;
 		height: 50px;
 		display: inline-block;
 		text-decoration: none;
 		font-size: 2em;
 		color: #000;
-	}
+	} */
 
 	/* Button Global Settings */
 	.btn {
@@ -777,7 +794,7 @@ footer {
 	}
 
 	/* Footer */
-	.small-1 {
+	/* .small-1 {
 		display: inline-block;
 		width: 29%;
 	}
@@ -786,10 +803,10 @@ footer {
 		display: inline-block;
 		width: 75%;
 		text-align: center;	
-	}
+	} */
 
 	/* Social Media Icons */
-	div#socialMedia {
+	/* div#socialMedia {
 		display: inline-block;
 		width: 32%;
 		text-align: left;
@@ -802,7 +819,7 @@ footer {
 		font-size: 2em;
 		display: inline-block;
 		text-align: right;
-	}
+	} */
 
 	/* Button Global Settings */
 	.btn {
@@ -922,7 +939,7 @@ footer {
 	}
 
 	/* Footer */
-	.small-1 {
+	/* .small-1 {
 		display: inline-block;
 		width: 51%;
 	}
@@ -931,10 +948,10 @@ footer {
 		display: inline-block;
 		width: 50%;
 		text-align: center;	
-	}
+	} */
 
 	/* Social Media Icons */
-	div#socialMedia {
+	/* div#socialMedia {
 		display: inline-block;
 		width: 21%;
 		text-align: left;
@@ -945,7 +962,7 @@ footer {
 		color: #000;
 		font-size: 2em;
 		padding: 0 20px;
-	}
+	} */
 
 	/* Button Global Settings */
 	.btn {
@@ -1105,3 +1122,131 @@ footer {
 		max-width: 100%;
 	}
 }
+
+/* --- */
+
+/* Footer Styles */
+footer {
+	background-color: #333;
+	color: white;
+	padding: 1.5rem 0;
+	text-align: center;
+  }
+  
+  .footer-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+  }
+  
+  .footer-text {
+	display: block;
+	margin-bottom: 1rem;
+  }
+  
+  .highlight {
+	color: #f39c12; /* Highlight color */
+  }
+  
+  #disclaimer {
+	margin-bottom: 1.5rem;
+  }
+  
+  .disclaimer-text {
+	font-size: 1rem;
+  }
+  
+  #socialMedia {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+  }
+  
+  .social-icon {
+	display: inline-block;
+	cursor: pointer;
+	transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon i {
+	font-size: 2rem;
+	color: white;
+	transition: color 0.3s ease-in-out, transform 0.3s ease;
+  }
+  
+ /* Different colors for each icon */
+.social-icon:nth-child(1) i:hover {
+	color: #3b5998; /* Facebook blue */
+	transform: scale(1.2);
+  }
+  
+  .social-icon:nth-child(2) i:hover {
+	color: #1da1f2; /* Twitter blue */
+	transform: scale(1.2);
+  }
+  
+  .social-icon:nth-child(3) i:hover {
+	color: #c13584; /* Instagram purple-pink */
+	transform: scale(1.2);
+  }
+  
+  .social-icon:nth-child(4) i:hover {
+	color: #ff0000; /* YouTube red */
+	transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  
+  /* For large desktops */
+  @media (min-width: 1200px) {
+	.footer-text {
+	  font-size: 1rem;
+	}
+  
+	.social-icon i {
+	  font-size: 2rem;
+	}
+  }
+  
+  /* For desktops and laptops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+	.footer-text {
+	  font-size: 0.9rem;
+	}
+  
+	.social-icon i {
+	  font-size: 1.8rem;
+	}
+  }
+  
+  /* For tablets and small laptops */
+  @media (min-width: 768px) and (max-width: 991px) {
+	.footer-text {
+	  font-size: 0.8rem;
+	}
+  
+	.social-icon i {
+	  font-size: 1.5rem;
+	}
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 767px) {
+	.footer-text {
+	  font-size: 0.7rem;
+	}
+  
+	#socialMedia {
+	  flex-direction: row;
+	  gap: 5px;
+	}
+  
+	.social-icon i {
+	  font-size: 1.5rem;
+	}
+  }
+  
+
+  /* Navbar */
+
+  
